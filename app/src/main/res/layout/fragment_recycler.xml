@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDF4">
+
+    <Button
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:focusable="true"
+        android:background="@drawable/share"
+        android:textSize="20dp"
+        android:text="Произвольная иницилизация покемонов"
+        android:id="@+id/pokemon_change"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <CheckBox
+            android:textSize="25dp"
+            android:id="@+id/check_attack"
+            android:text="attack"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <CheckBox
+            android:textSize="25dp"
+            android:id="@+id/check_defense"
+            android:text="defense"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+        <CheckBox
+            android:textSize="25dp"
+            android:id="@+id/check_hp"
+            android:text="hp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"    />
+
+</LinearLayout>
